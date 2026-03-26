@@ -1,0 +1,13 @@
+body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #1a1a1a; }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item a { text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 17px; }
+#logo {
+
+}
+#navEl {
+    font-size: 20px;
+}
