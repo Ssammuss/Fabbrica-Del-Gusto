@@ -7,6 +7,15 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 991.98px) {
+    #navbarNav {
+        background-color: #1a1a1a81;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+}
+
 /*-------------------------------------------------------------------*/
 
 .navbar {
@@ -19,9 +28,21 @@ body {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+.navbar > .container-fluid {
+    align-items: center !important; 
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
 #logo-img {
     width: 90px;
     height: 90px;
+    max-height: 90px;
 }
 #logo {
     color: #fffbe1 !important;
@@ -67,6 +88,10 @@ body {
 .info-container {
     color: #fcfcfc !important; 
 }
+.navbar-toggler {
+    margin: 0;
+    box-shadow: none !important;
+}
 
 /*-------------------------------------------------------------------*/
 
@@ -106,6 +131,8 @@ body {
     left:0;
     background-image: url('bg.jpg') !important;
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     z-index: 0;
     opacity: 0.75;
 }
