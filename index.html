@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <div class="logo-container">
-                <a id="logo" class="navbar-brand" href="index.html"><img src="logo.png" width="70" height="70">  FABBRICA DEL GUSTO</a>
+                <a id="logo" class="navbar-brand" href="index.html"><img id="logo-img" src="logo.png">  FABBRICA DEL GUSTO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +30,7 @@
                 </ul>
             </div>
             <div class="info-container">
-                <a style="text-decoration: underline;">5938201928</a> - <a style="text-decoration: underline;">fabbricadelgustonags@gmail.com</a>
+                <a style="text-decoration: underline;">+39 5938201928</a> - <a style="text-decoration: underline;">fabbricadelgustonags@gmail.com</a>
             </div>
         </div>
     </nav>
@@ -44,69 +44,112 @@
             </header>
         </section>
         <section id="info" class="section section-2">
-            sex
-            <br>
-            sex
-            <br>
-            sex
-            <br>
-            sex
+            <div class="container text-center">
+                <h2 class="mb-4 fw-bold" style="font-size: 40px;">Info</h2>
+                <p class="lead mb-5">Acquistiamo ortaggi freschi dalle migliori aziende agricole del territorio e li trasformiamo con cura artigianale per preservarne ogni proprietà.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 shadow-sm border-0 text-dark">
+                            <h1 class="mb-3">🚜</h1>
+                            <h4 class="fw-bold">Agricoltura Locale</h4>
+                            <p>Selezioniamo solo materie prime a Km 0, supportando i contadini del nostro territorio.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 shadow-sm border-0 text-dark">
+                            <h1 class="mb-3">⚙️</h1>
+                            <h4 class="fw-bold">Lavorazione Rapida</h4>
+                            <p>Trasformiamo i pomodori entro 24 ore dal raccolto, mantenendo intatti i sapori e i nutrienti.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 shadow-sm border-0 text-dark">
+                            <h1 class="mb-3">🥫</h1>
+                            <h4 class="fw-bold">Il Prodotto Finito</h4>
+                            <p>Salse, passate e conserve pronte per portare l'eccellenza della natura direttamente sulla tua tavola.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contatti" class="section section-3">
-            sexs
-            <br>
-            sexs
-            <br>
-            sexs
-            <br>
-            sexs
-            <br>
-            sexs
-            <br>
-            sexs
-            <br>
-            sexs
+            <header class="contatti-bg">
+                <div class="contatti-text">
+                <h2 class="text-center mb-5 fw-bold" style="font-size: 40px;">Chi siamo</h2>
+                    <div class="row justify-content-center align-items-center g-5">
+                        <div class="col-md-5 text-start">
+                            <form class="contatti-form p-4 rounded">
+                                <h4 class="text-warning mb-3">📍 Sede Operativa</h4>
+                                <p class="fs-5">Via del Commercio 15 47522 Pievesestina di Cesena (FC)</a></p>
+
+                                <h4 class="text-warning mb-3">📍 Sede Secondaria/Magazzino</h4>
+                                <p class="fs-5">Via Novara 17 48125 San Zaccaria (RA)</p>
+                                
+                                <h4 class="text-warning mb-3 mt-4">📞 Recapiti</h4>
+                                <p class="fs-5">Tel: +39 5938201928<br>Email: fabbricadelgustonags@gmail.com</p>
+                            </form>
+                        </div>
+                        
+                        <div class="col-md-5">
+                            <div class="p-4 rounded" style="background-color: #3a2e1d;">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Nome o Azienda">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Indirizzo Email">
+                                    </div>
+                                    <div class="mb-4">
+                                        <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Come possiamo aiutarti?"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning w-100 fw-bold">INVIA MESSAGGIO</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-10 mt-5 mx-auto">
+                            <div class="p-4 rounded shadow-sm text-center" style="background-color: #3a2e1d; border: 1px solid #ffc107;">
+                                <h5 class="text-warning mb-4 fw-bold">👥 Team Progetto 👥</h5>
+                                <div class="d-flex flex-wrap justify-content-center gap-3">
+                                    <div class="bg-dark text-white border border-secondary rounded px-3 py-2">
+                                        <span class="fw-bold">Severi</span> Nicole
+                                    </div>
+                                    <div class="bg-dark text-white border border-secondary rounded px-3 py-2">
+                                        <span class="fw-bold">Franco</span> Andrea
+                                    </div>
+                                    <div class="bg-dark text-white border border-secondary rounded px-3 py-2">
+                                        <span class="fw-bold">Gradari</span> Gilberto
+                                    </div>
+                                    <div class="bg-dark text-white border border-secondary rounded px-3 py-2">
+                                        <span class="fw-bold">Scorrano</span> Samuele Vito
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </section>
     </div>
     <footer class="bg-dark text-white text-center py-3">
         <p>© 2026 Fabbrica del Gusto</p>
-        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a id="logo" class="navbar-brand" href="#"><img src="logo.png" width="70" height="70">  FABBRICA DEL GUSTO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navEl" class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Info</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Contatti</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav> -->
     </footer>
-    <!-- <script>
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href'); 
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const logo = document.getElementById("logo-img");
+            const areaScroll = document.querySelector(".scroll-container") || window;
+
+            areaScroll.addEventListener("scroll", function() {
+                let posScroll = this.scrollY || this.scrollTop;
+                if (posScroll > 50) {
+                    logo.classList.add("logo-piccolo");
+                } else {
+                    logo.classList.remove("logo-piccolo");
                 }
             });
         });
-    </script> -->
+    </script>
 </body>
 </html>
 <!-- <script>

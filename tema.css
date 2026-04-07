@@ -19,6 +19,10 @@ body {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+#logo-img {
+    width: 90px;
+    height: 90px;
+}
 #logo {
     color: #fffbe1 !important;
     font-size: 23px;
@@ -100,7 +104,7 @@ body {
     width: 100%;
     height: 100%;
     left:0;
-    background-image: url('bg.jpg');
+    background-image: url('bg.jpg') !important;
     background-size: cover;
     z-index: 0;
     opacity: 0.75;
@@ -108,6 +112,48 @@ body {
 .hero-text {
     position: relative;
     top: 20%;
+}
+
+/*-------------------------------------------------------------------*/
+
+.section-3 {
+    background-color: #64502d;
+}
+
+.contatti-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contatti-bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-image: url('contatti.jpg') !important;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.contatti-text {
+    position: relative;
+    z-index: 1;
+    padding: 200px;
+}
+
+.contatti-form {
+    background-color: #3a2e1d;
+}
+
+.contatti-form p {
+    color: #fcfcfc !important;
+}
+
+.form-control.bg-dark::placeholder {
+    color: #adb5bd !important;
+    opacity: 1 !important;
 }
 
 /*-------------------------------------------------------------------*/
