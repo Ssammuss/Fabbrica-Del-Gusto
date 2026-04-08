@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 10%;
+    height: 8%;
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
@@ -40,9 +40,9 @@ body {
     white-space: nowrap;
 }
 #logo-img {
-    width: 90px;
-    height: 90px;
-    max-height: 90px;
+    width: 80px;
+    height: 80px;
+    max-height: 80px;
 }
 #logo {
     color: #fffbe1 !important;
@@ -129,7 +129,7 @@ body {
     width: 100%;
     height: 100%;
     left:0;
-    background-image: url('bg.jpg') !important;
+    background-image: url('img/bg.jpg') !important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -143,10 +143,45 @@ body {
 
 /*-------------------------------------------------------------------*/
 
-.section-3 {
-    background-color: #64502d;
+.catalogo-container {
+    width: 95%;
+}
+.catalogo-scrollabile {
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+.catalogo-scrollabile::-webkit-scrollbar {
+    width: 8px;
+}
+.catalogo-scrollabile::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.catalogo-scrollabile::-webkit-scrollbar-thumb {
+    background: #ffc107; /* Colore giallo/warning per riprendere il tuo tema */
+    border-radius: 10px;
+}
+.catalogo-scrollabile::-webkit-scrollbar-thumb:hover {
+    background: #e0a800; /* Colore quando ci passi sopra col mouse */
 }
 
+.card-ortaggio {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card-ortaggio:hover {
+    transform: translateY(0px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/*-------------------------------------------------------------------*/
+
+.section-4 {
+    background-color: #64502d;
+}
 .contatti-bg {
     position: relative;
     width: 100%;
@@ -159,7 +194,7 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    background-image: url('contatti.jpg') !important;
+    background-image: url('img/contatti.jpg') !important;
     background-size: cover;
     opacity: 0.5;
 }
@@ -167,7 +202,8 @@ body {
 .contatti-text {
     position: relative;
     z-index: 1;
-    padding: 200px;
+    padding: 1px;
+    padding-top: 10%;
 }
 
 .contatti-form {

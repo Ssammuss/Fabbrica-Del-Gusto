@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a id="logo" class="navbar-brand" href="index.html"><img id="logo-img" src="logo.png">  FABBRICA DEL GUSTO</a>
+            <a id="logo" class="navbar-brand" href="index.html"><img id="logo-img" src="img/logo.png">  FABBRICA DEL GUSTO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,6 +19,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogo">Catalogo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#info">Info</a>
@@ -33,6 +36,8 @@
             </div>
         </div>
     </nav>
+
+
     <div class="scroll-container">
         <section id="home" class="section section-1">
             <header class="hero-bg">
@@ -42,7 +47,23 @@
                 </div>
             </header>
         </section>
-        <section id="info" class="section section-2">
+
+
+        <section id="catalogo" class="section section-2">
+            <div class="catalogo-container">
+                <h2 class="mb-4 fw-bold" style="font-size: 40px; padding-top: 20px;">Catalogo</h2>
+                <p class="lead mb-5">Il nostro catalogo</p>
+                
+                * = prodotti congelati 
+                <div class="catalogo-scrollabile">
+                    <div class="row g-3" id="catalogo-card">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="info" class="section section-3">
             <div class="container text-center">
                 <h2 class="mb-4 fw-bold" style="font-size: 40px;">Info</h2>
                 <p class="lead mb-5">Acquistiamo ortaggi freschi dalle migliori aziende agricole del territorio e li trasformiamo con cura artigianale per preservarne ogni proprietà.</p>
@@ -72,11 +93,13 @@
                 </div>
             </div>
         </section>
-        <section id="contatti" class="section section-3">
+
+
+        <section id="contatti" class="section section-4">
             <header class="contatti-bg">
                 <div class="contatti-text container">
                     <h2 class="text-center mb-5 fw-bold" style="font-size: 40px;">Chi siamo</h2>
-                    <div class="row justify-content-center align-items-center g-5">
+                    <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-md-5 text-start">
                             <form class="contatti-form p-4 rounded">
                                 <h4 class="text-warning mb-3">📍 Sede Operativa</h4>
@@ -130,10 +153,12 @@
                 </div>
             </header>
         </section>
-        <footer class="bg-dark text-white text-center py-3">
+        <footer class="bg-dark text-white text-center">
             <p>© 2026 Fabbrica del Gusto</p>
         </footer>
     </div>
+
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const logo = document.getElementById("logo-img");
@@ -150,6 +175,8 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dati.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
 <!-- <script>
