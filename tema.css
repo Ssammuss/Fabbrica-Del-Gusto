@@ -187,7 +187,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 .contatti-bg::before {
     content: "";
     position: absolute;
@@ -198,22 +197,18 @@ body {
     background-size: cover;
     opacity: 0.5;
 }
-
 .contatti-text {
     position: relative;
     z-index: 1;
     padding: 1px;
     padding-top: 10%;
 }
-
 .contatti-form {
     background-color: #3a2e1d;
 }
-
 .contatti-form p {
     color: #fcfcfc !important;
 }
-
 .form-control.bg-dark::placeholder {
     color: #adb5bd !important;
     opacity: 1 !important;
